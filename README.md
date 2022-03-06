@@ -2,6 +2,6 @@
 
 Project: Sign-up Form
 
-<img src="sign-up-form.png" alt="Project: Sign-up Form" width=600 />
+![Project: Sign-up Form](sign-up-form.png)
 
-Photo by <a href="https://unsplash.com/@haliewestphoto" rel="noopener noreferrer" target="_blank">Halie West</a> on <a href="https://unsplash.com/photos/25xggax4bSA" rel="noopener noreferrer" target="_blank">Unsplash</a>
+Photo by [Halie West](https://unsplash.com/@haliewestphoto) on [Unsplash](https://unsplash.com/photos/25xggax4bSA)
