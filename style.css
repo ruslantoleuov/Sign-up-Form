@@ -1,0 +1,82 @@
+@font-face {
+  font-family: " Norse Bold";
+  src: url(font/Norse-Bold.otf);
+}
+
+:root {
+  --text-color-light-primary: #fbfbfb;
+  --text-color-light-secondary: #dadada;
+  --text-color-dark: #4e4e4e;
+
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1.6rem;
+  display: flex;
+  min-height: 100vh;
+}
+
+ul {
+  list-style: none;
+}
+
+a:link,
+a:visited {
+  color: var(--text-color-light-secondary);
+}
+
+/* Hero Section */
+.hero {
+  width: 30%;
+  background-image: url(img/halie-west-25xggax4bSA-unsplash.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-origin: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.logo {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-top: 20rem;
+}
+
+.logo-img {
+  height: 11rem;
+  width: 8rem;
+  background-image: url(img/odin-lined.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-origin: border-box;
+}
+
+.logo-text {
+  font-size: 8rem;
+  font-family: " Norse Bold";
+  color: var(--text-color-light-primary);
+}
+
+.footer {
+  font-size: 1.4rem;
+  align-self: center;
+  color: var(--text-color-light-secondary);
+}
