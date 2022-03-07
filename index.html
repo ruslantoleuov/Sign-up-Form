@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
     <title>Document</title>
@@ -12,9 +18,10 @@
   <body>
     <section class="hero">
       <div class="logo">
-        <div class="logo-img"></div>
+        <div class="logo-icon"></div>
         <h1 class="logo-text">ODIN</h1>
       </div>
+
       <footer class="footer">
         Photo by
         <a
@@ -34,14 +41,25 @@
         </a>
       </footer>
     </section>
+
     <main class="main">
-      <p>
-        This is not a real online service! You know you need something like this
-        in your life to help you realize your deepest dreams. Sign up now to get
-        started.
-      </p>
-      <p>You know you want to.</p>
-      <form action="#">
+      <div class="description">
+        <p>
+          This is not a real online service! You know you need something like
+          this in your life to help you realize your deepest dreams.
+          <br />
+          Sign up
+          <em>now</em>
+          to get started.
+        </p>
+        <p>
+          You
+          <em>know</em>
+          you want to.
+        </p>
+      </div>
+
+      <form class="form" action="#">
         <p>Let's do this!</p>
         <ul>
           <li>
@@ -92,12 +110,15 @@
             />
           </li>
         </ul>
-        <button type="submit">Create Account</button>
       </form>
-      <p>
-        Already have an account?
-        <span>Log in</span>
-      </p>
+
+      <div class="cta">
+        <button type="submit">Create Account</button>
+        <p class="log-in">
+          Already have an account?
+          <a href="#">Log in</a>
+        </p>
+      </div>
     </main>
   </body>
 </html>
