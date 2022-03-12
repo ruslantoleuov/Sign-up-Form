@@ -12,7 +12,6 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js" defer></script>
     <title>Document</title>
   </head>
   <body>
@@ -59,38 +58,20 @@
         </p>
       </div>
 
-      <form class="form" action="#">
+      <form id="form" action="#">
         <p>Let's do this!</p>
         <ul>
           <li>
             <label for="firstName">First name</label>
-            <input
-              type="text"
-              id="firstName"
-              name="firstName"
-              placeholder="Thor"
-              required
-            />
+            <input type="text" id="firstName" name="firstName" required />
           </li>
           <li>
             <label for="lastName">Last name</label>
-            <input
-              type="text"
-              id="lastName"
-              name="lastName"
-              placeholder="Odinson"
-              required
-            />
+            <input type="text" id="lastName" name="lastName" required />
           </li>
           <li>
             <label for="email">Email</label>
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="you@email.com"
-              required
-            />
+            <input type="email" name="email" id="email" required />
           </li>
           <li>
             <label for="phoneNumber">Phone number</label>
@@ -98,11 +79,19 @@
           </li>
           <li>
             <label for="password">Password</label>
-            <input type="password" name="password" id="password" required />
+            <input
+              class="error"
+              type="password"
+              name="password"
+              id="password"
+              required
+            />
+            <div>* Password do not match</div>
           </li>
           <li>
             <label for="confirmPassword">Confirm password</label>
             <input
+              class="error"
               type="password"
               name="confirmPassword"
               id="confirmPassword"
@@ -113,7 +102,9 @@
       </form>
 
       <div class="cta">
-        <button type="submit">Create Account</button>
+        <button form="form" class="cta-btn" type="submit">
+          Create Account
+        </button>
         <p class="log-in">
           Already have an account?
           <a href="#">Log in</a>
