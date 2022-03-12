@@ -140,6 +140,7 @@ ul {
 #form {
   background-color: var(--text-color-white);
   padding: 4rem;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
 }
 
 #form p {
