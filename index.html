@@ -12,7 +12,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <script defer src="script.js"></script>
+    <title>Sign-up Form</title>
   </head>
   <body>
     <section class="hero">
@@ -63,39 +64,69 @@
         <ul>
           <li>
             <label for="firstName">First name</label>
-            <input type="text" id="firstName" name="firstName" required />
+            <input
+              type="text"
+              id="firstName"
+              name="first-name"
+              required
+              minlength="3"
+              maxlength="20"
+            />
           </li>
           <li>
             <label for="lastName">Last name</label>
-            <input type="text" id="lastName" name="lastName" required />
+            <input
+              type="text"
+              id="lastName"
+              name="last-name"
+              required
+              minlength="3"
+              maxlength="20"
+            />
           </li>
           <li>
             <label for="email">Email</label>
-            <input type="email" name="email" id="email" required />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              required
+              pattern=".+\.com"
+              maxlength="20"
+            />
           </li>
           <li>
             <label for="phoneNumber">Phone number</label>
-            <input type="tel" name="phoneNumber" id="phoneNumber" required />
+            <input
+              type="tel"
+              name="phone-number"
+              id="phoneNumber"
+              required
+              minlength="12"
+              maxlength="12"
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            />
           </li>
           <li>
             <label for="password">Password</label>
             <input
-              class="error"
               type="password"
               name="password"
               id="password"
               required
+              minlength="8"
+              maxlength="20"
             />
-            <div>* Password do not match</div>
           </li>
           <li>
             <label for="confirmPassword">Confirm password</label>
             <input
-              class="error"
               type="password"
-              name="confirmPassword"
+              name="confirm-password"
               id="confirmPassword"
               required
+              minlength="8"
+              maxlength="20"
             />
           </li>
         </ul>
