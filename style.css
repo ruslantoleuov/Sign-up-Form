@@ -190,10 +190,6 @@ ul {
   outline: var(--input-outline-invalid-color);
 }
 
-/* #form input:valid {
-  outline: var(--input-outline-valid-color);
-} */
-
 #form .error-message {
   color: var(--color-error);
   font-size: 1.1rem;
